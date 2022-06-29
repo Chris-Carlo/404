@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 body {
   margin: 0;
   padding: 0;
@@ -15,10 +16,10 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .container .copy {
@@ -28,20 +29,16 @@ body {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  font-family: "Roboto", sans-serif;
+  transform: translate(-50%, -50%);
+  font-family: "Poppins", sans-serif;
 }
 
 .container .copy h3 {
-  text-transform: uppercase;
-  font-weight: 100;
-  text-align: center;
-  font-size: 45px;
+  font-size: 5rem;
 }
 
 .container .copy p {
-  font-size: 16px;
-  text-align: center;
+  font-size: 3rem;
 }
 
 .container .box {
@@ -50,20 +47,21 @@ body {
   height: 100px;
   float: left;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-.container .box:before, .container .box:after {
-  content: '';
+.container .box:before,
+.container .box:after {
+  content: "";
   position: absolute;
   -webkit-transition: 2s ease-in-out;
   transition: 2s ease-in-out;
@@ -85,7 +83,7 @@ body {
   opacity: 1;
   mix-blend-mode: difference;
   -webkit-box-shadow: 0px 0px 20px 3px white, 0px 0px 5px 0px white;
-          box-shadow: 0px 0px 20px 3px white, 0px 0px 5px 0px white;
+  box-shadow: 0px 0px 20px 3px white, 0px 0px 5px 0px white;
   opacity: 0;
 }
 
@@ -96,7 +94,7 @@ body {
 .container .box:nth-child(odd):after {
   background-color: #fff;
   -webkit-box-shadow: 0px 0px 20px 3px #fff, 0px 0px 5px 0px #fff;
-          box-shadow: 0px 0px 20px 3px #fff, 0px 0px 5px 0px #fff;
+  box-shadow: 0px 0px 20px 3px #fff, 0px 0px 5px 0px #fff;
 }
 
 .container .box:nth-child(4n + 1):before {
@@ -106,7 +104,7 @@ body {
 .container .box:nth-child(4n + 1):after {
   background-color: #ffeac3;
   -webkit-box-shadow: 0px 0px 20px 3px #ffeac3, 0px 0px 5px 0px #ffeac3;
-          box-shadow: 0px 0px 20px 3px #ffeac3, 0px 0px 5px 0px #ffeac3;
+  box-shadow: 0px 0px 20px 3px #ffeac3, 0px 0px 5px 0px #ffeac3;
 }
 
 .container .box:nth-child(2n + 2):before {
@@ -116,7 +114,7 @@ body {
 .container .box:nth-child(2n + 2):after {
   background-color: #fdf6a6;
   -webkit-box-shadow: 0px 0px 20px 3px #fdf6a6, 0px 0px 5px 0px #fdf6a6;
-          box-shadow: 0px 0px 20px 3px #fdf6a6, 0px 0px 5px 0px #fdf6a6;
+  box-shadow: 0px 0px 20px 3px #fdf6a6, 0px 0px 5px 0px #fdf6a6;
 }
 
 .container .box:nth-child(3n + 3):before {
@@ -126,7 +124,7 @@ body {
 .container .box:nth-child(3n + 3):after {
   background-color: #fffac4;
   -webkit-box-shadow: 0px 0px 20px 3px #fffac4, 0px 0px 5px 0px #fffac4;
-          box-shadow: 0px 0px 20px 3px #fffac4, 0px 0px 5px 0px #fffac4;
+  box-shadow: 0px 0px 20px 3px #fffac4, 0px 0px 5px 0px #fffac4;
 }
 
 .container .box:nth-child(4n + 4):before {
@@ -136,17 +134,17 @@ body {
 .container .box:nth-child(4n + 4):after {
   background-color: #fbf2d8;
   -webkit-box-shadow: 0px 0px 20px 3px #fbf2d8, 0px 0px 5px 0px #fbf2d8;
-          box-shadow: 0px 0px 20px 3px #fbf2d8, 0px 0px 5px 0px #fbf2d8;
+  box-shadow: 0px 0px 20px 3px #fbf2d8, 0px 0px 5px 0px #fbf2d8;
 }
 
-.container .box:nth-child(5n +5):before {
+.container .box:nth-child(5n + 5):before {
   background-image: url(../assets/lamp3.png);
 }
 
-.container .box:nth-child(5n +5):after {
+.container .box:nth-child(5n + 5):after {
   background-color: #ffd89e;
   -webkit-box-shadow: 0px 0px 20px 3px #ffd89e, 0px 0px 5px 0px #ffd89e;
-          box-shadow: 0px 0px 20px 3px #ffd89e, 0px 0px 5px 0px #ffd89e;
+  box-shadow: 0px 0px 20px 3px #ffd89e, 0px 0px 5px 0px #ffd89e;
 }
 
 .container .box:hover:before {
@@ -161,5 +159,38 @@ body {
   opacity: 1;
   width: 44px;
   height: 44px;
+}
+.hover-before {
+  -webkit-transition: 0s ease-in-out;
+  transition: 0s ease-in-out;
+  opacity: 1;
+}
+.hover:after {
+  -webkit-transition: 0s ease-in-out;
+  transition: 0s ease-in-out;
+  opacity: 1;
+  width: 44px;
+  height: 44px;
+}
+
+.border {
+  border: 1px solid #fbf2d8;
+  border-radius: 10%;
+  padding: 30px;
+}
+.style-404 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px;
+}
+@media screen and (max-width: 425px) {
+  .container .copy h3 {
+    font-size: 3rem;
+  }
+
+  .container .copy p {
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
